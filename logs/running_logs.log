@@ -1,0 +1,737 @@
+[2024-01-05 08:11:52,153: INFO: main: Welcome to our custom log]
+[2024-01-05 10:43:14,016: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 10:43:14,031: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 10:43:14,050: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 10:43:14,050: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\utils\common.py", line 30, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 11, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Pyhton\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\utils\common.py", line 32, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-01-05 10:43:27,741: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 10:43:27,749: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 10:43:27,750: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 10:43:27,752: INFO: common: created directory at : artifacts]
+[2024-01-05 10:43:27,805: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 10:43:27,876: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 12, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 21, in get_data_ingestion_config
+    source_url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2024-01-05 10:44:13,317: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 10:44:13,322: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 10:44:13,322: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 10:44:13,324: INFO: common: created directory at : artifacts]
+[2024-01-05 10:44:13,324: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 10:44:13,325: ERROR: main: "'ConfigBox' object has no attribute 'local_data_file'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 12, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 22, in get_data_ingestion_config
+    local_data_file=config.local_data_file,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file'"
+[2024-01-05 10:44:48,771: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 10:44:48,774: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 10:44:48,775: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 10:44:48,775: INFO: common: created directory at : artifacts]
+[2024-01-05 10:44:48,777: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 10:44:48,777: ERROR: main: urlretrieve() got an unexpected keyword argument 'fliename']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+TypeError: urlretrieve() got an unexpected keyword argument 'fliename'
+[2024-01-05 10:45:16,253: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 10:45:16,260: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 10:45:16,262: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 10:45:16,262: INFO: common: created directory at : artifacts]
+[2024-01-05 10:45:16,264: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 10:45:38,408: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\Pyhton\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Pyhton\lib\http\client.py", line 1257, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Pyhton\lib\http\client.py", line 1303, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Pyhton\lib\http\client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Pyhton\lib\http\client.py", line 1012, in _send_output
+    self.send(msg)
+  File "C:\Pyhton\lib\http\client.py", line 952, in send
+    self.connect()
+  File "C:\Pyhton\lib\http\client.py", line 1419, in connect
+    super().connect()
+  File "C:\Pyhton\lib\http\client.py", line 923, in connect
+    self.sock = self._create_connection(
+  File "C:\Pyhton\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Pyhton\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+  File "C:\Pyhton\lib\urllib\request.py", line 239, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Pyhton\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Pyhton\lib\urllib\request.py", line 523, in open
+    response = meth(req, response)
+  File "C:\Pyhton\lib\urllib\request.py", line 632, in http_response
+    response = self.parent.error(
+  File "C:\Pyhton\lib\urllib\request.py", line 555, in error
+    result = self._call_chain(*args)
+  File "C:\Pyhton\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Pyhton\lib\urllib\request.py", line 747, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "C:\Pyhton\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Pyhton\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Pyhton\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Pyhton\lib\urllib\request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "C:\Pyhton\lib\urllib\request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2024-01-05 10:46:43,823: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 10:46:43,823: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 10:46:43,823: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 10:46:43,823: INFO: common: created directory at : artifacts]
+[2024-01-05 10:46:43,823: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 10:46:54,752: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info " 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0F5C:560C:2280C4C:2A06C57:659790C7
+Accept-Ranges: bytes
+Date: Fri, 05 Jan 2024 05:16:56 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iah17264-IAH
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1704431816.773824,VS0,VE322
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 84d77256a49fbb15b43304445cc5a91233a0e334
+Expires: Fri, 05 Jan 2024 05:21:56 GMT
+Source-Age: 0
+
+]
+[2024-01-05 10:46:55,293: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:18:05,399: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:18:05,399: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:18:05,415: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:18:05,415: INFO: common: created directory at : artifacts]
+[2024-01-05 11:18:05,415: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:18:05,415: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:18:05,591: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:18:05,591: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:18:05,597: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:18:05,597: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:18:05,599: INFO: common: created directory at : artifacts]
+[2024-01-05 11:18:05,599: ERROR: main: 'ConfigurationManager' object has no attribute 'get_validation_config']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_validation_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_validation_config'
+[2024-01-05 11:18:57,126: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:18:57,128: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:18:57,129: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:18:57,130: INFO: common: created directory at : artifacts]
+[2024-01-05 11:18:57,132: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:18:57,132: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:18:57,305: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:18:57,306: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:18:57,309: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:18:57,309: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:18:57,309: INFO: common: created directory at : artifacts]
+[2024-01-05 11:18:57,311: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:18:57,312: ERROR: main: "'ConfigBox' object has no attribute 'all'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'ALL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'ALL'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'ALL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'ALL'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'all'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'all'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'all'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_data_validation_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 33, in get_data_validation_config
+    ALL_REQUIRED_FILES=config.ALL.REQUIRED_FILES,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'all'"
+[2024-01-05 11:19:16,278: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:19:16,288: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:19:16,288: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:19:16,289: INFO: common: created directory at : artifacts]
+[2024-01-05 11:19:16,289: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:19:16,289: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:19:16,456: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:19:16,459: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:19:16,461: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:19:16,461: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:19:16,463: INFO: common: created directory at : artifacts]
+[2024-01-05 11:19:16,463: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:19:16,464: ERROR: main: __init__() got an unexpected keyword argument 'root_dir']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_data_validation_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 30, in get_data_validation_config
+    data_validation_config = DataValidationConfig(
+TypeError: __init__() got an unexpected keyword argument 'root_dir'
+[2024-01-05 11:22:12,787: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:22:12,798: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:22:12,805: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:22:12,805: INFO: common: created directory at : artifacts]
+[2024-01-05 11:22:12,805: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:22:12,809: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:22:13,057: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:22:13,057: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:22:13,060: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:22:13,061: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:22:13,062: INFO: common: created directory at : artifacts]
+[2024-01-05 11:22:13,062: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:22:13,063: ERROR: main: __init__() got an unexpected keyword argument 'ALL_REQUIRED_FILES']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_data_validation_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 30, in get_data_validation_config
+    data_validation_config = DataValidationConfig(
+TypeError: __init__() got an unexpected keyword argument 'ALL_REQUIRED_FILES'
+[2024-01-05 11:22:29,630: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:22:29,636: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:22:29,636: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:22:29,637: INFO: common: created directory at : artifacts]
+[2024-01-05 11:22:29,637: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:22:29,638: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:22:29,799: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:22:29,799: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:22:29,807: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:22:29,808: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:22:29,809: INFO: common: created directory at : artifacts]
+[2024-01-05 11:22:29,809: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:22:29,809: ERROR: main: "'ConfigBox' object has no attribute 'all_required_file'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'ALL_REQUIRED_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'ALL_REQUIRED_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'ALL_REQUIRED_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'ALL_REQUIRED_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'all_required_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'all_required_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'all_required_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_data_validation_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 33, in get_data_validation_config
+    ALL_REQUIRED_FILES=config.ALL_REQUIRED_FILE,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'all_required_file'"
+[2024-01-05 11:24:03,917: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:24:03,924: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:24:03,926: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:24:03,926: INFO: common: created directory at : artifacts]
+[2024-01-05 11:24:03,926: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:24:03,927: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:24:04,097: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:24:04,097: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:24:04,099: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:24:04,099: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:24:04,101: INFO: common: created directory at : artifacts]
+[2024-01-05 11:24:04,102: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:24:04,102: ERROR: main: __init__() got an unexpected keyword argument 'ALL_REQUIRED_FILES']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 12, in main
+    data_validation_config = config.get_data_validation_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 30, in get_data_validation_config
+    data_validation_config = DataValidationConfig(
+TypeError: __init__() got an unexpected keyword argument 'ALL_REQUIRED_FILES'
+[2024-01-05 11:24:53,409: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:24:53,412: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:24:53,412: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:24:53,414: INFO: common: created directory at : artifacts]
+[2024-01-05 11:24:53,414: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:24:53,415: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:24:53,796: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:24:53,796: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:24:53,802: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:24:53,802: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:24:53,805: INFO: common: created directory at : artifacts]
+[2024-01-05 11:24:53,805: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:24:53,806: ERROR: main: 'DataValidation' object has no attribute 'download_file']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 14, in main
+    data_validation.download_file()
+AttributeError: 'DataValidation' object has no attribute 'download_file'
+[2024-01-05 11:27:31,436: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:27:31,438: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:27:31,438: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:27:31,438: INFO: common: created directory at : artifacts]
+[2024-01-05 11:27:31,441: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:27:31,441: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:27:31,608: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:27:31,608: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:27:31,611: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:27:31,611: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:27:31,613: INFO: common: created directory at : artifacts]
+[2024-01-05 11:27:31,613: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:27:31,614: ERROR: main: 'DataValidationConfig' object has no attribute 'ALL_REQUIRED_FILE']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 24, in <module>
+    data_validation.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_02_data_validation.py", line 14, in main
+    data_validation.validate_all_files_exist()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\components\data_validation.py", line 28, in validate_all_files_exist
+    raise e
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\components\data_validation.py", line 18, in validate_all_files_exist
+    if file not in self.config.ALL_REQUIRED_FILE:
+AttributeError: 'DataValidationConfig' object has no attribute 'ALL_REQUIRED_FILE'
+[2024-01-05 11:27:48,991: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 11:27:49,005: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:27:49,006: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:27:49,006: INFO: common: created directory at : artifacts]
+[2024-01-05 11:27:49,008: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 11:27:49,021: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 11:27:49,190: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 11:27:49,190: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 11:27:49,196: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 11:27:49,196: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 11:27:49,196: INFO: common: created directory at : artifacts]
+[2024-01-05 11:27:49,199: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 11:27:49,218: INFO: main: >>>>>>>> Stage Data Validation Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 12:53:08,146: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 12:53:08,177: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 12:53:08,218: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 12:53:08,221: INFO: common: created directory at : artifacts]
+[2024-01-05 12:53:08,221: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 12:53:08,221: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 12:53:08,728: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 12:53:08,728: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 12:53:08,728: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 12:53:08,728: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 12:53:08,728: INFO: common: created directory at : artifacts]
+[2024-01-05 12:53:08,728: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 12:53:08,739: INFO: main: >>>>>>>> Stage Data Validation Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 12:53:08,740: INFO: main: >>>>>>>> Stage Data Transformation Stage Started <<<<<<<<]
+[2024-01-05 12:53:08,744: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 12:53:08,744: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 12:53:08,744: INFO: common: created directory at : artifacts]
+[2024-01-05 12:53:08,744: INFO: common: created directory at : artifacts/data_transformation]
+[2024-01-05 12:53:26,036: INFO: main: >>>>>>>> Stage Data Transformation Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 18:40:08,198: INFO: main: >>>>>>>> Stage Data Ingestion Stage Started <<<<<<<<]
+[2024-01-05 18:40:08,232: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 18:40:08,276: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 18:40:08,281: INFO: common: created directory at : artifacts]
+[2024-01-05 18:40:08,281: INFO: common: created directory at : artifacts/data_ingestion]
+[2024-01-05 18:40:08,284: INFO: data_ingestion: File already exists of size : ~ 7718 KB]
+[2024-01-05 18:40:09,028: INFO: main: >>>>>>>> Stage Data Ingestion Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 18:40:09,028: INFO: main: >>>>>>>> Stage Data Validation Stage Started <<<<<<<<]
+[2024-01-05 18:40:09,033: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 18:40:09,033: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 18:40:09,033: INFO: common: created directory at : artifacts]
+[2024-01-05 18:40:09,033: INFO: common: created directory at : artifacts/data_validation]
+[2024-01-05 18:40:09,041: INFO: main: >>>>>>>> Stage Data Validation Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 18:40:09,041: INFO: main: >>>>>>>> Stage Data Transformation Stage Started <<<<<<<<]
+[2024-01-05 18:40:09,044: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 18:40:09,048: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 18:40:09,048: INFO: common: created directory at : artifacts]
+[2024-01-05 18:40:09,048: INFO: common: created directory at : artifacts/data_transformation]
+[2024-01-05 18:40:14,486: INFO: main: >>>>>>>> Stage Data Transformation Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-05 18:40:14,608: INFO: main: >>>>>>>> Stage Model Training Stage Started <<<<<<<<]
+[2024-01-05 18:40:14,626: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 18:40:14,638: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 18:40:14,643: INFO: common: created directory at : artifacts]
+[2024-01-05 18:40:14,695: INFO: common: created directory at : artifacts/model_trainer]
+[2024-01-05 18:40:14,718: ERROR: main: "'ConfigBox' object has no attribute 'gradient_accumulation_steps'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'gradient_accumulation_steps'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'gradient_accumulation_steps'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'gradient_accumulation_steps'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'gradient_accumulation_steps'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'gradient_accumulation_steps'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'gradient_accumulation_steps'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'gradient_accumulation_steps'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 48, in <module>
+    model_trainer.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 12, in main
+    model_trainer_config = config.get_model_trainer_config()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\config\configuration.py", line 70, in get_model_trainer_config
+    gradient_accumulation_steps=params.gradient_accumulation_steps,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'gradient_accumulation_steps'"
+[2024-01-05 18:43:10,785: INFO: main: >>>>>>>> Stage Model Training Stage Started <<<<<<<<]
+[2024-01-05 18:43:10,788: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 18:43:10,788: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 18:43:10,788: INFO: common: created directory at : artifacts]
+[2024-01-05 18:43:10,792: INFO: common: created directory at : artifacts/model_trainer]
+[2024-01-05 19:08:36,590: ERROR: main: __init__() got an unexpected keyword argument 'save_step']
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 48, in <module>
+    model_trainer.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+TypeError: __init__() got an unexpected keyword argument 'save_step'
+[2024-01-05 19:13:19,463: INFO: main: >>>>>>>> Stage Model Training Stage Started <<<<<<<<]
+[2024-01-05 19:13:19,498: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 19:13:19,535: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 19:13:19,551: INFO: common: created directory at : artifacts]
+[2024-01-05 19:13:19,554: INFO: common: created directory at : artifacts/model_trainer]
+[2024-01-05 19:16:21,801: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "E:\Academics Documents\SEM7\Major Project\Code2 pretrained\main.py", line 48, in <module>
+    model_trainer.main()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "e:\academics documents\sem7\major project\code2 pretrained\src\textSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 121, in __init__
+  File "C:\Pyhton\lib\site-packages\transformers\training_args.py", line 1493, in __post_init__
+    and (self.device.type != "cuda")
+  File "C:\Pyhton\lib\site-packages\transformers\training_args.py", line 1941, in device
+    return self._setup_devices
+  File "C:\Pyhton\lib\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "C:\Pyhton\lib\site-packages\transformers\training_args.py", line 1841, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2024-01-05 19:23:38,739: INFO: main: >>>>>>>> Stage Model Training Stage Started <<<<<<<<]
+[2024-01-05 19:23:38,803: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-05 19:23:38,836: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-05 19:23:38,846: INFO: common: created directory at : artifacts]
+[2024-01-05 19:23:38,847: INFO: common: created directory at : artifacts/model_trainer]
+[2024-01-06 12:20:42,159: INFO: main: >>>>>>>> Stage Model Evaluation Stage Started <<<<<<<<]
+[2024-01-06 12:20:42,309: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 12:20:42,356: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 12:20:42,358: INFO: common: created directory at : artifacts]
+[2024-01-06 12:20:42,359: INFO: common: created directory at : artifacts/model_evaluation]
+[2024-01-06 12:52:05,648: INFO: rouge_scorer: Using default tokenizer.]
+[2024-01-06 13:01:17,169: INFO: main: >>>>>>>> Stage Model Evaluation Stage Completed <<<<<<<<
+
+x========x]
+[2024-01-06 13:41:10,315: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 13:41:10,368: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 13:41:10,368: INFO: common: created directory at : artifacts]
+[2024-01-06 13:41:10,377: INFO: common: created directory at : artifacts/model_evaluation]
+[2024-01-06 13:55:10,360: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 13:55:10,398: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 13:55:10,414: INFO: common: created directory at : artifacts]
+[2024-01-06 13:55:10,422: INFO: common: created directory at : artifacts/model_evaluation]
+[2024-01-06 14:11:10,126: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 14:11:10,182: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 14:11:10,198: INFO: common: created directory at : artifacts]
+[2024-01-06 14:11:10,202: INFO: common: created directory at : artifacts/model_evaluation]
+[2024-01-06 14:24:51,552: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 14:24:51,578: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 14:24:51,598: INFO: common: created directory at : artifacts]
+[2024-01-06 14:24:51,600: INFO: common: created directory at : artifacts/model_evaluation]
+[2024-01-06 19:21:45,051: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 19:21:45,113: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 19:21:45,113: INFO: common: created directory at : artifacts]
+[2024-01-06 19:21:45,113: INFO: common: created directory at : artifacts/model_evaluation]
+[2024-01-06 19:51:03,899: INFO: common: yaml file: config\config.yaml loaded Successfully]
+[2024-01-06 19:51:03,920: INFO: common: yaml file: params.yaml loaded Successfully]
+[2024-01-06 19:51:03,922: INFO: common: created directory at : artifacts]
+[2024-01-06 19:51:03,923: INFO: common: created directory at : artifacts/model_evaluation]
